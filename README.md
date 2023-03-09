@@ -1,6 +1,7 @@
 # KeyboardObserver
 #### Simple way to handle keyboard events
 
+![video_example](https://github.com/AntonoffEvgeniy/KeyboardObserver/blob/main/Resources/video_example.mov)
 
 ## Installation
 
