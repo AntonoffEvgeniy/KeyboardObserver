@@ -8,7 +8,7 @@
 #### Swift Package Manager
 
 ##### Add the dependency to Package.swift:
-```
+```swift
 dependencies: [
     ...
     .package(url: "https://github.com/AntonoffEvgeniy/KeyboardObserver.git", from: "1.0.0")
@@ -21,7 +21,7 @@ targets: [
 
 ## Usage
 
-```
+```swift
 import KeyboardObserver
 
 class MyViewController: UIViewController {
@@ -34,6 +34,7 @@ class MyViewController: UIViewController {
         
         keyboardObserver = KeyboardObserver(bottomConstraint: bottomConstraint, view: view)
     }
+}
 ```
 ##### Additional parameters
 - **isSafeArea: Bool** - if the constraint is connected to a safe area, `true` by default
