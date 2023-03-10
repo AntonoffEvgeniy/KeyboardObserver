@@ -90,9 +90,9 @@ public final class KeyboardObserver {
             switch state {
             case .initial:
                 if isReversed {
-                    constraintValue += bottomConstraintInitialValue
-                } else {
                     constraintValue -= bottomConstraintInitialValue
+                } else {
+                    constraintValue += bottomConstraintInitialValue
                 }
             case .stuck:
                 break
@@ -106,7 +106,7 @@ public final class KeyboardObserver {
             if isSafeArea {
                 constraintValue -= view.safeAreaInsets.bottom
             }
-            bottomConstraint.constant = isReversed ? constraintValue : -constraintValue
+            bottomConstraint.constant = isReversed ? -constraintValue : constraintValue
         case .hide:
             bottomConstraint.constant = bottomConstraintInitialValue
         }
